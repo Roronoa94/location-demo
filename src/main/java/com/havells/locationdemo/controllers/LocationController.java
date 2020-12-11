@@ -43,7 +43,6 @@ public class LocationController extends BaseController {
     @GetMapping("/{id}")
     public ResponseEntity<LocationDto> getLocationById(@PathVariable final Long id) {
         Location location = service.getLocationById(id);
-        System.out.println(location);
         return new ResponseEntity<>(LocationDto.from(location), HttpStatus.OK);
     }
 
