@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "c2bc6a1b-0428-4904-a9d9-b7a87e1ce033",
+		"name": "Havells LocationRepo Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/location"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Location By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/location/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Location By UserID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/location/user/1234"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": 1234,\n    \"lattitude\": 23.6,\n    \"longitude\": 14.5,\n    \"timestamp\": \"12/06/2020\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/location"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
